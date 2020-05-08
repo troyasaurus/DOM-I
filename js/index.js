@@ -42,6 +42,8 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
+//Images--------------------------------------
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
 
@@ -50,6 +52,32 @@ cta.setAttribute('src', siteContent["cta"]["img-src"])
 
 let middleImg = document.getElementById('middle-img');
 middleImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
+//Images closed -------------------------------
 
 
+
+
+//Nav----------------------------------------
+const nav = document.querySelectorAll('nav a')
+
+nav.forEach(element => element.style.color = 'green');
+
+nav[0].textContent = siteContent.nav["nav-item-1"];
+nav[1].textContent = siteContent.nav["nav-item-2"];
+nav[2].textContent = siteContent.nav["nav-item-3"];
+nav[3].textContent = siteContent.nav["nav-item-4"];
+nav[4].textContent = siteContent.nav["nav-item-5"];
+nav[5].textContent = siteContent.nav["nav-item-6"];
+
+const newNav = document.querySelector("nav");
+const newNav1 = document.createElement('a')
+newNav1.textContent = "More";
+newNav1.href = "#";
+newNav1.style.color = 'green'; 
+
+newNav.append(newNav1);
+
+//Nav----------------------------------------
+
+//body---------------------------------------
 
