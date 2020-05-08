@@ -71,13 +71,48 @@ nav[5].textContent = siteContent.nav["nav-item-6"];
 
 const newNav = document.querySelector("nav");
 const newNav1 = document.createElement('a')
-newNav1.textContent = "More";
+newNav1.textContent = "Home";
 newNav1.href = "#";
 newNav1.style.color = 'green'; 
 
-newNav.append(newNav1);
+newNav.prepend(newNav1);
+
+const newNav2 = document.createElement('a')
+newNav2.textContent = "More";
+newNav2.href = "#";
+newNav2.style.color = 'green'; 
+
+newNav.append(newNav2);
 
 //Nav----------------------------------------
 
-//body---------------------------------------
+//cta----------------------------------------
+//cta----------------------------------------
 
+//main-content-------------------------------
+//main-content-------------------------------
+
+//contact------------------------------------
+const call = document.querySelectorAll('.contact h4')
+call[0].textContent = siteContent.contact['contact-h4'];
+
+
+const call1 = document.querySelectorAll('.contact p')
+call1[1].innerHTML = siteContent.contact['address'];
+call1[2].textContent = siteContent.contact['phone'];
+call1[3].textContent = siteContent.contact['email'];
+
+
+//I tried to get this to work, but for some reason it would not. So I made a second nav
+// ------------------------------------------------------------
+// const newContact = document.querySelectorAll('.contact p');
+// const newContact1 = document.createElement('p')
+// newContact1.textContent = 'Call Me!!';
+
+
+// newContact.prepend(newContact1);
+//contact------------------------------------//
+
+
+//footer-------------------------------------//
+//footer-------------------------------------//
