@@ -1,3 +1,7 @@
+
+
+
+
 const siteContent = {
   "nav": {
     "nav-item-1": "Services",
@@ -38,5 +42,124 @@ const siteContent = {
 };
 
 // Example: Update the img src for the logo
+
+//Images--------------------------------------
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+let cta = document.getElementById("cta-img");
+cta.setAttribute('src', siteContent["cta"]["img-src"])
+
+let middleImg = document.getElementById('middle-img');
+middleImg.setAttribute('src', siteContent['main-content']['middle-img-src'])
+//Images closed -------------------------------
+
+
+
+
+//Nav----------------------------------------
+const nav = document.querySelectorAll('nav a')
+
+nav.forEach(element => element.style.color = 'green');
+
+nav[0].textContent = siteContent.nav["nav-item-1"];
+nav[1].textContent = siteContent.nav["nav-item-2"];
+nav[2].textContent = siteContent.nav["nav-item-3"];
+nav[3].textContent = siteContent.nav["nav-item-4"];
+nav[4].textContent = siteContent.nav["nav-item-5"];
+nav[5].textContent = siteContent.nav["nav-item-6"];
+
+const newNav = document.querySelector("nav");
+const newNav1 = document.createElement('a')
+newNav1.textContent = "Home";
+newNav1.href = "#";
+newNav1.style.color = 'green'; 
+
+newNav.prepend(newNav1);
+
+const newNav2 = document.createElement('a')
+newNav2.textContent = "More";
+newNav2.href = "#";
+newNav2.style.color = 'green'; 
+
+newNav.append(newNav2);
+
+//Nav----------------------------------------
+
+
+
+
+
+
+//cta----------------------------------------
+
+const cta1 = document.querySelector('.cta-text h1');
+cta1.textContent = siteContent.cta['h1'];
+
+const ctaButton = document.querySelector('.cta-text button');
+ctaButton.textContent = siteContent.cta['button'];
+//cta----------------------------------------
+
+
+
+
+
+
+
+//main-content-------------------------------
+
+
+const mainCon = document.querySelectorAll('.main-content h4');
+mainCon[0].textContent = siteContent["main-content"]["features-h4"];
+mainCon[1].textContent = siteContent["main-content"]["about-h4"];
+mainCon[2].textContent = siteContent["main-content"]["services-h4"];
+mainCon[3].textContent = siteContent["main-content"]["product-h4"];
+mainCon[4].textContent = siteContent["main-content"]["vision-h4"];
+
+const mainCon2 = document.querySelectorAll('.main-content p');
+mainCon2[0].textContent = siteContent["main-content"]["features-content"];
+mainCon2[1].textContent = siteContent["main-content"]["about-content"];
+mainCon2[2].textContent = siteContent["main-content"]["services-content"];
+mainCon2[3].textContent = siteContent["main-content"]["product-content"];
+mainCon2[4].textContent = siteContent["main-content"]["vision-content"];
+
+
+//main-content-------------------------------
+
+
+
+
+
+//contact------------------------------------
+const call = document.querySelectorAll('.contact h4')
+call.textContent = siteContent.contact['contact-h4'];
+
+
+const call1 = document.querySelectorAll('.contact p')
+call1[0].textContent = siteContent.contact['address'];
+call1[1].textContent = siteContent.contact['phone'];
+call1[2].textContent = siteContent.contact['email'];
+
+
+//I tried to get this to work, but for some reason it would not. So I made a second nav
+
+// const newContact = document.querySelector('.contact');
+// const newContact1 = document.createElement('p')
+// newContact1.textContent = 'Call Me!!';
+
+
+// newContact.prepend(newContact1);
+//contact------------------------------------//
+
+
+
+
+
+
+
+//footer-------------------------------------//
+
+const footer = document.querySelector('footer');
+footer.textContent = siteContent.footer['copyright'];
+
+//footer-------------------------------------//
