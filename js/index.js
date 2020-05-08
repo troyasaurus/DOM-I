@@ -1,6 +1,6 @@
 
 
-//just started
+
 
 const siteContent = {
   "nav": {
@@ -132,13 +132,13 @@ mainCon2[4].textContent = siteContent["main-content"]["vision-content"];
 
 //contact------------------------------------
 const call = document.querySelectorAll('.contact h4')
-call[0].textContent = siteContent.contact['contact-h4'];
+call.textContent = siteContent.contact['contact-h4'];
 
 
 const call1 = document.querySelectorAll('.contact p')
-call1[1].innerHTML = siteContent.contact['address'];
-call1[2].textContent = siteContent.contact['phone'];
-call1[3].textContent = siteContent.contact['email'];
+call1[0].textContent = siteContent.contact['address'];
+call1[1].textContent = siteContent.contact['phone'];
+call1[2].textContent = siteContent.contact['email'];
 
 
 //I tried to get this to work, but for some reason it would not. So I made a second nav
@@ -158,4 +158,8 @@ call1[3].textContent = siteContent.contact['email'];
 
 
 //footer-------------------------------------//
+
+const footer = document.querySelector('footer');
+footer.textContent = siteContent.footer['copyright'];
+
 //footer-------------------------------------//
