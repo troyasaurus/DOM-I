@@ -86,11 +86,49 @@ newNav.append(newNav2);
 
 //Nav----------------------------------------
 
-//cta----------------------------------------
+
+
+
+
+
 //cta----------------------------------------
 
+const cta1 = document.querySelector('.cta-text h1');
+cta1.textContent = siteContent.cta['h1'];
+
+const ctaButton = document.querySelector('.cta-text button');
+ctaButton.textContent = siteContent.cta['button'];
+//cta----------------------------------------
+
+
+
+
+
+
+
 //main-content-------------------------------
+
+
+const mainCon = document.querySelectorAll('.main-content h4');
+mainCon[0].textContent = siteContent["main-content"]["features-h4"];
+mainCon[1].textContent = siteContent["main-content"]["about-h4"];
+mainCon[2].textContent = siteContent["main-content"]["services-h4"];
+mainCon[3].textContent = siteContent["main-content"]["product-h4"];
+mainCon[4].textContent = siteContent["main-content"]["vision-h4"];
+
+const mainCon2 = document.querySelectorAll('.main-content p');
+mainCon2[0].textContent = siteContent["main-content"]["features-content"];
+mainCon2[1].textContent = siteContent["main-content"]["about-content"];
+mainCon2[2].textContent = siteContent["main-content"]["services-content"];
+mainCon2[3].textContent = siteContent["main-content"]["product-content"];
+mainCon2[4].textContent = siteContent["main-content"]["vision-content"];
+
+
 //main-content-------------------------------
+
+
+
+
 
 //contact------------------------------------
 const call = document.querySelectorAll('.contact h4')
@@ -104,14 +142,19 @@ call1[3].textContent = siteContent.contact['email'];
 
 
 //I tried to get this to work, but for some reason it would not. So I made a second nav
-// ------------------------------------------------------------
-// const newContact = document.querySelectorAll('.contact p');
+
+// const newContact = document.querySelector('.contact');
 // const newContact1 = document.createElement('p')
 // newContact1.textContent = 'Call Me!!';
 
 
 // newContact.prepend(newContact1);
 //contact------------------------------------//
+
+
+
+
+
 
 
 //footer-------------------------------------//
